@@ -13,11 +13,14 @@
 		"@remix-run/netlify": "^1.7.2",
 		"@remix-run/node": "^1.7.2",
 		"@remix-run/react": "^1.7.2",
+		"@use-gesture/react": "^10.2.20",
 		"cross-env": "^7.0.3",
 		"framer-motion": "^7.4.0",
+		"radash": "^7.1.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"react-icons": "^4.4.0"
+		"react-icons": "^4.4.0",
+		"usehooks-ts": "^2.7.2"
 	},
 	"devDependencies": {
 		"@remix-run/dev": "^1.7.2",

@@ -11,28 +11,34 @@ specifiers:
   '@types/node': ^18.7.23
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
+  '@use-gesture/react': ^10.2.20
   autoprefixer: ^10.4.12
   concurrently: ^7.4.0
   cross-env: ^7.0.3
   eslint: ^8.23.1
   framer-motion: ^7.4.0
   postcss: ^8.4.16
+  radash: ^7.1.0
   react: ^18.2.0
   react-dom: ^18.2.0
   react-icons: ^4.4.0
   tailwindcss: ^3.1.8
   typescript: ^4.7.4
+  usehooks-ts: ^2.7.2
 
 dependencies:
   '@netlify/functions': 1.2.0
   '@remix-run/netlify': 1.7.2_hpdjxbbufc6x2yaacuadn5mdum
   '@remix-run/node': 1.7.2_biqbaboplfbrettd7655fr4n2y
   '@remix-run/react': 1.7.2_biqbaboplfbrettd7655fr4n2y
+  '@use-gesture/react': 10.2.20_react@18.2.0
   cross-env: 7.0.3
   framer-motion: 7.4.0_biqbaboplfbrettd7655fr4n2y
+  radash: 7.1.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.4.0_react@18.2.0
+  usehooks-ts: 2.7.2_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
   '@remix-run/dev': 1.7.2_63cxfdg5f5bb4xpkk3vcjfcl3q
@@ -2104,6 +2110,19 @@ packages:
       '@typescript-eslint/types': 5.38.1
       eslint-visitor-keys: 3.3.0
     dev: true
+
+  /@use-gesture/core/10.2.20:
+    resolution: {integrity: sha512-4lFhHc8so4yIHkBEs641DnEsBxPyhJ5GEjB4PURFDH4p/FcZriH6w99knZgI63zN/MBFfylMyb8+PDuj6RIXKQ==}
+    dev: false
+
+  /@use-gesture/react/10.2.20_react@18.2.0:
+    resolution: {integrity: sha512-KnJq9ZSqprWA6uNhWTUHZqTCh+rfa0j8ehTzqeBhktUPrmTj7yVOBvEQ/vSFU/7d72cGgWSsJ0f5T6GQCHXnvg==}
+    peerDependencies:
+      react: '>= 16.8.0'
+    dependencies:
+      '@use-gesture/core': 10.2.20
+      react: 18.2.0
+    dev: false
 
   /@web3-storage/multipart-parser/1.0.0:
     resolution: {integrity: sha512-BEO6al7BYqcnfX15W2cnGR+Q566ACXAT9UQykORCWW80lmkpWsnEob6zJS1ZVBKsSJC8+7vJkHwlp+lXG1UCdw==}
@@ -6301,6 +6320,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /radash/7.1.0:
+    resolution: {integrity: sha512-NOWTaF5YMY3mCgrNq9Fw9fK8yvJv92uqRb2StcVq5W8kcJ6949EbV2vk6nLJKAocYs29rzJafZZP1lFkEkoVGw==}
+    dev: false
+
   /range-parser/1.2.1:
     resolution: {integrity: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==}
     engines: {node: '>= 0.6'}
@@ -7433,6 +7456,17 @@ packages:
     resolution: {integrity: sha512-cwESVXlO3url9YWlFW/TA9cshCEhtu7IKJ/p5soJ/gGpj7vbvFrAY/eIioQ6Dw23KjZhYgiIo8HOs1nQ2vr/oQ==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /usehooks-ts/2.7.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-DeLqSnGg9VvpwPZA+6lKVURJKM9EBu7bbIXuYclQ9COO3w4lacnJa0uP0iJbC/lAmY7GlmPinjZfGNNmDTlUpg==}
+    engines: {node: '>=16.15.0', npm: '>=8'}
+    peerDependencies:
+      react: ^16.8.0  || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0  || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}

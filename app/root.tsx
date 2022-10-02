@@ -8,6 +8,9 @@ import {
 	ScrollRestoration,
 } from "@remix-run/react";
 import styles from "../styles/compiled.css";
+import Footer from "./components/Footer";
+import Grid from "./components/Grid";
+import Header from "./components/Header";
 
 export const meta: MetaFunction = () => ({
 	charset: "utf-8",
@@ -17,9 +20,21 @@ export const meta: MetaFunction = () => ({
 
 export const links: LinksFunction = () => [
 	{
-		rel: "stylesheet",
-		href: styles,
+		rel: "preconnect",
+		href: "https://fonts.googleapis.com",
+		crossOrigin: "anonymous",
 	},
+	{
+		rel: "preconnect",
+		href: "https://fonts.gstatic.com",
+		crossOrigin: "anonymous",
+	},
+	{
+		rel: "stylesheet preload prefetch",
+		href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Syne:wght@800&display=swap",
+		crossOrigin: "anonymous",
+	},
+	{ rel: "stylesheet", href: styles },
 ];
 
 export default function App() {
@@ -29,8 +44,13 @@ export default function App() {
 				<Meta />
 				<Links />
 			</head>
-			<body>
-				<Outlet />
+			<body className="text-themeBlack">
+				<Grid className="w-full h-screen absolute -z-50 overflow-hidden" />
+				<div className="layoutGrid">
+					<Header />
+					<Outlet />
+					<Footer />
+				</div>
 				<ScrollRestoration />
 				<Scripts />
 				<LiveReload />

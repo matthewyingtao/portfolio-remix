@@ -11,13 +11,13 @@ export default function Index() {
 	return (
 		<div className="relative">
 			<main className="mx-gutter grid grid-cols-3 items-center">
-				<CirclesBackground className="overflow-visible -z-40 col-start-1 row-start-1 col-span-2 w-full h-full max-h-[70vh] mx-auto" />
+				<CirclesBackground className="overflow-visible -z-40 col-start-1 row-start-1 col-span-2 w-full h-full max-h-[70vh] mx-auto pr-14" />
 				<motion.div
 					variants={{ hidden: {}, visible: {} }}
 					initial="hidden"
 					animate="visible"
 					transition={{ staggerChildren: 0.25 }}
-					className="col-span-2 col-start-1 row-start-1 mb-20"
+					className="col-span-2 col-start-1 row-start-1"
 				>
 					<motion.span
 						variants={textVariants}

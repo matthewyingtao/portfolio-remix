@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 function CustomNavLink({ to, title }: { to: string; title: string }) {
 	return (
-		<NavLink className="relative" to={to}>
+		<NavLink className="relative" to={to} prefetch="intent">
 			{({ isActive }) => {
 				return (
 					<>

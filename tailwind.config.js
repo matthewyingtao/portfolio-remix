@@ -7,6 +7,10 @@ module.exports = {
 			display: ["Syne", "sans-serif"],
 		},
 		extend: {
+			screens: {
+				"2xs": "400px",
+				xs: "520px",
+			},
 			colors: {
 				themeLightBrown: "#DAD1C0",
 				themeBrown: "#A38B5C",

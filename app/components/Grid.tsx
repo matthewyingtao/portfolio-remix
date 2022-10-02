@@ -6,7 +6,7 @@ export default function Grid({
 			<svg
 				viewBox="0 0 1440 1024"
 				fill="none"
-				className="w-full h-full"
+				className="h-full w-full"
 				preserveAspectRatio="xMidYMid slice"
 				xmlns="http://www.w3.org/2000/svg"
 				stroke="#EDE8DE"

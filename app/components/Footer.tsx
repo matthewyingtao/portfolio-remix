@@ -6,20 +6,21 @@ export default function Footer() {
 	const seconds = useSecondsSpent();
 
 	return (
-		<footer className="flex mx-gutter border-t-2 border-themeBlack">
-			<div className="flex flex-col justify-center px-8 my-4 border-r-2 w-48 border-themeBlack">
+		<footer className="mx-gutter flex border-t-2 border-themeBlack">
+			<div className="my-4 flex w-48 flex-col justify-center border-r-2 border-themeBlack px-8">
 				<p>x: {x}</p>
 				<p>y: {y}</p>
 				<p>
 					{seconds} second{seconds === 1 ? "" : "s"}
 				</p>
 			</div>
-			<div className="flex flex-col justify-center px-8 my-4 border-r-2 w-72 border-themeBlack">
+			<div className="my-4 flex w-72 flex-col justify-center border-r-2 border-themeBlack px-8">
 				<p>
-					It’s the <em>little</em> things that make a website delightful.
+					It’s the <em>little</em> things that make a website
+					delightful.
 				</p>
 			</div>
-			<div className="flex flex-col gap-[2px] ml-auto px-8 my-4 border-l-2 border-themeBlack">
+			<div className="my-4 ml-auto flex flex-col gap-[2px] border-l-2 border-themeBlack px-8">
 				<div className="flex items-center gap-3">
 					<IoMail size={20} />
 					<p>matthew.yingtao@gmail.com</p>

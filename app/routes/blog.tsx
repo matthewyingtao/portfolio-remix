@@ -2,7 +2,7 @@ export default function Index() {
 	return (
 		<div className="relative">
 			<main className="mx-gutter">
-				<h1 className="text-8xl font-display">Blog</h1>
+				<h1 className="font-display text-8xl">Blog</h1>
 				<svg
 					width="623"
 					height="493"

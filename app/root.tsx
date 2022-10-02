@@ -45,7 +45,7 @@ export default function App() {
 				<Links />
 			</head>
 			<body className="text-themeBlack">
-				<Grid className="w-full h-screen absolute -z-50 overflow-hidden" />
+				<Grid className="absolute -z-50 h-screen w-full overflow-hidden" />
 				<div className="layoutGrid">
 					<Header />
 					<Outlet />

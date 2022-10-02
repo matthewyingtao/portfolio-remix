@@ -29,7 +29,7 @@ export default function Header() {
 		<header>
 			<nav>
 				<ul>
-					<li className="px-gutter py-8 flex gap-8 font-sans text-lg">
+					<li className="flex gap-8 px-gutter py-8 font-sans text-lg">
 						<AnimatePresence>
 							<CustomNavLink title="Home" to="/" />
 							<CustomNavLink title="Blog" to="/blog" />

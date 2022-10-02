@@ -11,7 +11,7 @@ export default function Index() {
 	return (
 		<div className="relative">
 			<main className="mx-gutter grid grid-cols-3 items-center">
-				<CirclesBackground className="overflow-visible -z-40 col-start-1 row-start-1 col-span-2 w-full h-full max-h-[70vh] mx-auto pr-14" />
+				<CirclesBackground className="-z-40 col-span-2 col-start-1 row-start-1 mx-auto h-full max-h-[70vh] w-full overflow-visible pr-14" />
 				<motion.div
 					variants={{ hidden: {}, visible: {} }}
 					initial="hidden"
@@ -22,14 +22,14 @@ export default function Index() {
 					<motion.span
 						variants={textVariants}
 						transition={{ type: "spring", duration: 1.5 }}
-						className="block text-3xl font-light italic mb-3"
+						className="mb-3 block text-3xl font-light italic"
 					>
 						Auckland-based front-end developer
 					</motion.span>
 					<motion.h1
 						variants={textVariants}
 						transition={{ type: "spring", duration: 1.5 }}
-						className="text-8xl font-display leading-[0.95] mb-12"
+						className="mb-12 font-display text-8xl leading-[0.95]"
 					>
 						Matthew
 						<br />
@@ -42,19 +42,19 @@ export default function Index() {
 					>
 						<Link
 							to="/blog"
-							className="flex items-center px-14 py-5 bg-themeBlack text-white w-max rounded-full"
+							className="flex w-max items-center rounded-full bg-themeBlack px-14 py-5 text-white"
 						>
 							View projects
 						</Link>
 						<Link
 							to="/blog"
-							className="flex items-center px-14 py-5 bg-themeLightBrown w-max rounded-full border-themeBlack border-2"
+							className="flex w-max items-center rounded-full border-2 border-themeBlack bg-themeLightBrown px-14 py-5"
 						>
 							Get in touch
 						</Link>
 					</motion.div>
 				</motion.div>
-				<PortraitCircle className="w-full h-full overflow-visible" />
+				<PortraitCircle className="h-full w-full overflow-visible" />
 			</main>
 		</div>
 	);
@@ -120,7 +120,7 @@ function PortraitCircle({ className }: React.SVGProps<SVGElement>) {
 				rx="141.955"
 				fill="url(#pattern0)"
 			/>
-			<g className="animate-[spin_65s_infinite_linear] origin-center">
+			<g className="origin-center animate-[spin_65s_infinite_linear]">
 				<path
 					d="M334.168 23.7287L334.168 23.7288L334.179 23.7344C338.781 26.0281 343.038 28.9576 346.825 32.437L346.827 32.4388C349.452 34.8251 351.514 37.7657 352.863 41.0477C353.873 43.6832 354.202 46.5312 353.819 49.3278C353.411 52.0749 352.532 54.7311 351.222 57.1797L351.22 57.1838C349.929 59.6525 348.17 61.8462 346.041 63.6428C343.806 65.4906 341.152 66.7626 338.311 67.3476C334.816 68.0294 331.218 67.9757 327.745 67.1901C322.916 66.0898 318.269 64.3044 313.946 61.8881L313.946 61.888L313.936 61.8827L270.462 38.8545L290.682 0.67604L334.168 23.7287ZM291.055 34.7085L290.821 35.1503L291.263 35.3845L319.317 50.2558C319.318 50.2564 319.319 50.257 319.321 50.2576C321.273 51.3315 323.322 52.2185 325.441 52.9069C326.958 53.4259 328.558 53.6562 330.159 53.5858L330.159 53.5859L330.171 53.5851C331.462 53.4955 332.698 53.0322 333.73 52.2516L333.738 52.2459L333.745 52.2399C334.759 51.4105 335.598 50.3867 336.211 49.2285C336.825 48.0704 337.201 46.8013 337.317 45.4958L337.318 45.484L337.319 45.4722C337.372 44.1868 337.053 42.9133 336.399 41.8054L336.399 41.8053L336.392 41.7934C335.545 40.4465 334.46 39.2652 333.19 38.3075C331.433 36.9419 329.551 35.7452 327.569 34.7334L299.499 19.848L299.057 19.6137L298.823 20.0555L291.055 34.7085Z"
 					stroke="#A3D10A"

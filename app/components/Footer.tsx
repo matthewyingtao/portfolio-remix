@@ -7,7 +7,7 @@ export default function Footer() {
 
 	return (
 		<footer className="mx-gutter flex border-t-2 border-themeBlack text-sm">
-			<div className="my-4 hidden w-48 flex-col justify-center border-r-2 border-themeBlack px-8 lg:flex">
+			<div className="w-42 my-4 hidden flex-col justify-center border-r-2 border-themeBlack px-8 lg:flex xl:w-72">
 				<p>x: {x}</p>
 				<p>y: {y}</p>
 				<p>
